@@ -1,0 +1,19 @@
+                                              #  github脊梁命令
+git clone git@github.com:wuleitpl/for-fem.git # （1）只克隆了master分支
+
+git checkout -b 2020mooc                      # （2.1）在当前分支下创建子分支2020mooc并切换到2020mooc分支
+git push -u origin 2020mooc                   # （2.2）将当前分支推送到远程，并在远程创建分支2020mooc（第一次推送该分支时这样使用，否则直接git push）
+
+git checkout -b 2020mooc origin/2020mooc      # （3.1）小伙伴克隆后如没有创建本地分支2020mooc，在本地创建2020mooc分支，并与远程分支关联）
+                                              # （3.2）如已有本地分支2020mooc，则要用其他方法与远程分支关联。建议先删除本地分支2020mooc（git branch -d 2020mooc）
+
+git pull                                      # （4.1）只下载当前分支
+git status                                    # （4.2）查看修改状态
+git add .    # 添加全部修改                   # （4.3）除忽略文件类型外，所有被修改的文件都提交到中转站
+git commit -m “Prepare for solidbeam branch”  # （4.4）实现提交
+git status                                    # （4.5）查看修改状态的提交情况
+git push                                      # （4.6）只推送当前分支
+
+git checkout master                           # （5.1）切换分支到master，（git checkout -b branchName  , 加上参数 -b 后表示创建并切换到新分支）
+git branch -a                                 # （5.2）查看本地分支和远程分支状态
+git branch -d 2020mooc                        # （5.3）删除分支2020mooc
