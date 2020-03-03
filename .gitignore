@@ -1,0 +1,6 @@
+ParametersInput.csv
+IrrForDynamic.Mat
+wheel_location.txt
+.DS_Store
+*.db
+__pycache__
