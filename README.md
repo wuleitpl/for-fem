@@ -1,5 +1,8 @@
 # for-fem
-finite element method; ANSYS; 有限元分析
+finite element method; ANSYS; 有限元分析  
+
+![](https://raw.githubusercontent.com/wuleitpl/for-fem/master/static/001-001.png)
+
 ***
 （1）注册github账号：
 用户名，邮箱; 
@@ -19,7 +22,7 @@ finite element method; ANSYS; 有限元分析
 输入：ssh-keygen -t rsa -C "你的完整电子邮件"  
 一直回车，不用输入任何内容 
 然后，会在当前路径下“自动”生成.shh文件夹，文件夹中的id_rsa文件不要给任何人，id_rsa.pub文件可以公开。
-***	
+***
 （5）github个人主页，点开最右上角的下三角位置:  
 >找到settings  
 左边SSH and GPG keys  
@@ -27,9 +30,10 @@ finite element method; ANSYS; 有限元分析
 复制.ssh文件夹下的id_rsa.pub文件中的内容，粘贴到title下面打大框中  
 提交  
 远程账户设置完毕
-***	 
+***
 （6）克隆远程仓库
 >在Git Bash中输入
 git clone git@github.com:你的Github用户名/for-fem.git  
 随后，你的当前文件夹下将自动创建一个新文件夹，其内容与网上完全一致
+
 ***
